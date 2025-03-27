@@ -7,7 +7,7 @@ function App() {
   const [currentTime, setCurrentTime] = useState('');
 
   useEffect(() => {
-    axios.get('/localhost:8080/api/time GET')
+    axios.get('/api/time')
       .then(response => {
         setCurrentTime(response.data);
       })
